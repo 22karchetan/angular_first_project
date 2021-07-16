@@ -1,4 +1,6 @@
-.space{
-    width: 65%;
-    
+.navbar{
+    justify-content: space-between;
+}
+span a{
+    padding-right: 1rem;
 }

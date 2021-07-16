@@ -1,9 +1,13 @@
-<mat-toolbar color="primary">
-    <span>AVB Ambition</span>
-    <div class="space"></div>
-    <button mat-button><a [routerLink]="['/home']" routerLinkActive="router-link-active" >HOME</a></button>
-    <button mat-button><a [routerLink]="['/about_us']" routerLinkActive="router-link-active"> ABOUT</a></button>
-    <button mat-button><a [routerLink]="['/contact_us']" routerLinkActive="router-link-active">CONTACT</a></button>
-    <button mat-button><a [routerLink]="['/parent_feedback']" routerLinkActive="router-link-active">FEEDBACK</a></button>
-    <button mat-button><a [routerLink]="['/download']" routerLinkActive="router-link-active">DOWNLOAD</a></button>
+<mat-toolbar color="primary" class="navbar">
+    <div>
+          <span>AVB Ambition</span>
+    </div> 
+    <div>
+          <button mat-button><a [routerLink]="['/home']" routerLinkActive="router-link-active" >HOME</a></button>
+          <button mat-button><a [routerLink]="['/about_us']" routerLinkActive="router-link-active"> ABOUT</a></button>
+          <button mat-button><a [routerLink]="['/contact_us']" routerLinkActive="router-link-active">CONTACT</a></button>
+          <button mat-button><a [routerLink]="['/parent_feedback']" routerLinkActive="router-link-active">FEEDBACK</a></button>
+          <button mat-button><a [routerLink]="['/download']" routerLinkActive="router-link-active">DOWNLOAD</a></button>
+    </div>
+    
   </mat-toolbar>
