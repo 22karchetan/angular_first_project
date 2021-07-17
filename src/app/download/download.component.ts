@@ -28,29 +28,18 @@ const ELEMENT_DATA: PeriodicElement[] = [
   templateUrl: './download.component.html',
   styleUrls: ['./download.component.css']
 })
-export class DownloadComponent  implements AfterViewInit{
+export class DownloadComponent{
 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
 
   data:any=[];
-  //sort: (compareFn?: (a: PeriodicElement, b: PeriodicElement) => number) => PeriodicElement[];
-
   constructor(private userservice:UserServiceService) { 
 
     this.userservice.getData().subscribe(data=>{
      // console.log(data);
       this.data=data;
     })
-    @ViewChild(MatSort) sort: MatSort;
-
-    ngAfterViewInit() {
-      this.dataSource.sort = this.sort;
-    }
-    
+   
   }
-  ngAfterViewInit(): void {
-    throw new Error('Method not implemented.');
-  }
-
 }
