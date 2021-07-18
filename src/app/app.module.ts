@@ -19,6 +19,7 @@ import { DownloadComponent } from './download/download.component';
 import { MatTableModule } from '@angular/material/table'
 import { MatTabsModule } from '@angular/material/tabs'
 import { MatSortModule } from '@angular/material/sort'
+import { MatPaginator } from '@angular/material/paginator';
 
 
 @NgModule({
@@ -43,7 +44,7 @@ import { MatSortModule } from '@angular/material/sort'
     MatButtonModule,
     MatTableModule,
     MatTabsModule,
-    MatSortModule
+    MatSortModule,MatPaginator
   ],
   providers: [],
   bootstrap: [AppComponent]

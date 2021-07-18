@@ -1,6 +1,5 @@
-import { AfterViewInit, Component, ViewChild} from '@angular/core';
-import { UserServiceService } from '../user-service.service';
-import {MatTableDataSource} from '@angular/material/table';
+import { Component } from '@angular/core';
+import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
 
 
@@ -29,17 +28,11 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./download.component.css']
 })
 export class DownloadComponent{
-
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  constructor() { }
+  displayedColumns: string[] = ['position', 'name', 'weight','symbol'];
   dataSource = ELEMENT_DATA;
 
   data:any=[];
-  constructor(private userservice:UserServiceService) { 
-
-    this.userservice.getData().subscribe(data=>{
-     // console.log(data);
-      this.data=data;
-    })
-   
-  }
+ 
+  
 }
